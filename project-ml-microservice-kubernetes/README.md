@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![viethai123](https://circleci.com/gh/viethai123/DevOps_Microservices/tree/circleci-project-setup.svg?style=svg)](https://app.circleci.com/pipelines/github/viethai123/DevOps_Microservices)
 
 ## Project Overview
 
@@ -48,3 +48,21 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+## START HERE
+### Step 0
+- Fork this repository and clone it to your local environment
+
+### Step 1: Install dependencies
+- 
+- Set up the environment by running command `make setup` to create a virtual environment is called `.devops`
+- Install dependencies by running command `make install`
+
+### Step 2: Run Docker container
+- Run the application on docker by calling command `./run_docker.sh`
+
+### Step 3: Upload to Docker Hub
+- To upload to docker hub, run command `./upload_docker.sh`
+
+### Step 4: Kubernetes deployment
+- To deploy to kubernetes, run `./run_kubernetes.sh`
